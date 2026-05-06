@@ -21,6 +21,9 @@ connectDB();
 
 const app = express();
 
+// Trust first proxy (required for Render / reverse proxy deployments)
+app.set('trust proxy', 1);
+
 // Security middleware
 app.use(helmet({
   crossOriginResourcePolicy: { policy: 'cross-origin' },
