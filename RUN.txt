@@ -1,0 +1,58 @@
+=========================================
+KHURANA TRAVELS PROJECT SETUP & RUN GUIDE
+=========================================
+
+HOW TO START THE PROJECT
+-----------------------------------------
+
+The project is split into two folders: `frontend` and `backend`. You will need to open two terminal windows to run both servers simultaneously.
+
+Terminal 1: Start the Backend Server
+1. Navigate to the backend folder:
+   cd backend
+2. Seed the database (ONLY RUN ONCE to populate initial data):
+   npm run seed
+3. Start the server in development mode:
+   npm run dev
+
+Terminal 2: Start the Frontend Server
+1. Navigate to the frontend folder:
+   cd frontend
+2. Start the frontend application:
+   npm run dev
+
+ACCESSING THE WEBSITE
+-----------------------------------------
+- Public Site: http://localhost:3000
+- Admin Panel: http://localhost:3000/admin/login
+  Admin Email: admin
+  Admin Password: admin123
+
+
+TECHNOLOGY STACK & LIBRARIES USED
+-----------------------------------------
+
+FRONTEND
+- Next.js (16.2.4) - React Framework for routing, server-side rendering, and UI.
+- React & React DOM (19.2.4) - Core UI library.
+- Tailwind CSS (v4) - Utility-first CSS framework for rapid UI styling.
+- Framer Motion - For complex page animations and transitions.
+- React Three Fiber / Drei / Three.js - For advanced 3D rendering and graphics.
+- Axios - Promise-based HTTP client for making API requests to the backend.
+- React Icons - Library for easily including SVG icons in the UI.
+- React Hot Toast - Beautiful, lightweight notifications/toast popups.
+- Lenis - For smooth scrolling effects.
+
+BACKEND
+- Express.js (v5.2.1) - Web framework for Node.js to create the API.
+- Mongoose - Object Data Modeling (ODM) library for MongoDB.
+- JsonWebToken (JWT) - For secure user and admin authentication/authorization.
+- Bcryptjs - For hashing and securing passwords in the database.
+- Multer - Middleware for handling `multipart/form-data` and file/image uploads.
+- PDFKit - A PDF document generation library for Node.js.
+- CORS - Middleware to allow cross-origin requests from the frontend.
+- Helmet - Middleware to secure Express apps by setting various HTTP headers.
+- Express Rate Limit - To prevent brute-force attacks and rate-limit API requests.
+- Morgan - HTTP request logger middleware for development.
+- Dotenv - To load environment variables from a `.env` file.
+- Nodemon - Development utility that automatically restarts the server on file changes.
